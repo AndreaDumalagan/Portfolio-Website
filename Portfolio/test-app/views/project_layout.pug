@@ -1,0 +1,121 @@
+doctype html
+style.
+
+  @import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap');
+
+  html {
+    margin: 0;
+    height: 100%;
+    font-family: Montserrat;
+    font-size: 14px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, #ff4d00, #ff4424, #ff3d39, #ff384a, #ff375a);
+  }
+  ul { 
+    margin: 50px auto 0; 
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    width: 600px;
+    text-align: center;
+  }
+  li { 
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+  }
+  .hover {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  .hover:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .hover:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  @media screen and (max-height: 300px) {
+    ul {
+      margin-top: 40px;
+    }
+  }
+  div{
+    color: white;
+    font-size: 20px;
+  }
+  #wrap{
+    margin-top: 2%;
+    margin-left: 10%;
+    min-width: 600px;
+  }
+  img{
+    max-width: 30%;
+    border-radius: 50%;
+    -webkit-filter: drop-shadow( 0px 5px 4px rgba(0, 0, 0, .4));
+    filter: drop-shadow( 0px 5px 4px rgba(0, 0, 0, .4));
+  }
+  #toggle{
+    margin-top: -2%;
+  }
+  #kash{
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 2%;
+  }
+  #kash-title{
+    font-size: 50px;
+    font-weight: bold;
+  }
+  #kash-subtitle{
+    font-size: 20px;
+  }
+  #kash-descrip{
+    margin-top: 2%;
+    font-size: 25px;
+  }
+  #cosmic{
+    margin-left: 10%;
+  }
+  #pdb{
+    margin-left: 10%;
+  }
+html
+  ul(class="nav")
+    li 
+      a(href="/" class="hover") Home
+    li
+      a(href="/about" class="hover") About
+    li 
+      a(href="/projects" class="hover") Projects
+    li 
+      a(href="/contact" class="hover") Contact
+  div(id="wrap")
+    body(id="title") WHAT I'M DOING
+  div(id="toggle")
+    ul
+      li(id="kash-link")
+        a(href="/projects/kash")
+          img(src="http://localhost:3000/images/ka$h.png")
+      li(id="cosmic-link")
+        a(href="/projects/cosmic")
+          img(src="http://localhost:3000/images/cosmic.png")
+      li(id="pdb-link")
+        a(href="/projects/pdb")
+          img(src="http://localhost:3000/images/pdb101_reports.png")

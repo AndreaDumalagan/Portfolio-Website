@@ -1,0 +1,98 @@
+doctype html
+style.
+
+  @import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap');
+
+  html {
+    margin: 0;
+    height: 100%;
+    font-family: Montserrat;
+    font-size: 14px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, #ff4d00, #ff4424, #ff3d39, #ff384a, #ff375a);
+  }
+  ul { 
+    margin: 50px auto 0; 
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    width: 600px;
+    text-align: center;
+  }
+  li { 
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+  }
+  a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  @media screen and (max-height: 300px) {
+    ul {
+      margin-top: 40px;
+    }
+  }
+
+  @keyframes fadeInUp{
+    from{
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+  .first {
+    opacity: 0;
+    -webkit-animation:fadeInUp 1s ease-in-out 0s forwards;
+    -webkit-animation-delay:1s;
+  }
+  div{
+    color: white;
+    font-size: 20px;
+  }
+  #wrap{
+    margin-top: 2%;
+    margin-left: 10%;
+    min-width: 600px;
+  }
+html
+  ul
+    li 
+      a(href="/") Home
+    li
+      a(href="/about") About
+    li 
+      a(href="/projects") Projects
+    li 
+      a(href="/contact") Contact
+  div(id="wrap")
+    body(id="title") LET'S CONNECT

@@ -1,0 +1,160 @@
+doctype html
+style.
+
+  @import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap');
+
+  html {
+    margin: 0;
+    height: 100%;
+    font-family: Montserrat;
+    font-size: 14px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, #ff4d00, #ff4424, #ff3d39, #ff384a, #ff375a);
+  }
+  ul { 
+    margin: 50px auto 0; 
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    width: 600px;
+    text-align: center;
+  }
+  li { 
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+  }
+  a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  @media screen and (max-height: 300px) {
+    ul {
+      margin-top: 40px;
+    }
+  }
+  
+  /* Defines fade-in text animation */
+  @keyframes fadeInUp {
+    from { 
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+  .first{
+    font-weight: 1200;
+    opacity: 0;
+    -webkit-animation:fadeInUp 1ms ease-in-out 0s forwards;
+    -webkit-animation-delay:0.7s;
+  }
+  .second{
+    opacity: 0;
+    -webkit-animation:fadeInUp 1ms ease-in-out 0s forwards;
+    -webkit-animation-delay:1.2s;
+  }
+  .third{
+    opacity: 0;
+    -webkit-animation:fadeInUp 1ms ease-in-out 0s forwards;
+    -webkit-animation-delay:1.3s;
+  }
+  .fourth{
+    opacity: 0;
+    -webkit-animation:fadeInUp 1ms ease-in-out 0s forwards;
+    -webkit-animation-delay:1.4s;
+  }
+  .fifth{
+    font-family: Raleway;
+    opacity: 0;
+    -webkit-animation:fadeInUp 1.5s ease-in-out 0.5s forwards;
+    -webkit-animation-delay:1.7s;
+  }
+  .sixth{
+    font-style: italic;
+    opacity: 0;
+    -webkit-animation:fadeInUp 2s ease-in-out 0.5s forwards;
+    -webkit-animation-delay:2.5s;
+  }
+  .seventh{
+    font-style: italic;
+    opacity: 0;
+    -webkit-animation:fadeInUp 2s ease-in-out 0.5s forwards;
+    -webkit-animation-delay:3s;
+  }
+  .eigth{
+    font-style: italic;
+    opacity: 0;
+    -webkit-animation:fadeInUp 2s ease-in-out 0.5s forwards;
+    -webkit-animation-delay:3.5s;
+  }
+  .ninth{
+    font-style: italic;
+    opacity: 0;
+    -webkit-animation:fadeInUp 2s ease-in-out 0.5s forwards;
+    -webkit-animation-delay:4.2s;
+  }
+  div{
+    color: white;
+  }
+
+  #wrap{
+    margin-top: 7%;
+    margin-left: 10%;
+    min-width: 600px;
+  }
+
+html
+  ul
+    li 
+      a(href="/") Home
+    li
+      a(href="/about") About
+    li 
+      a(href="/projects") Projects
+    li 
+      a(href="/contact") Contact
+  
+  div(id="wrap")
+    div
+      p(class="first" style="font-size:28px") Hello! 
+        span(class="second")  My
+        span(class="third")  name
+        span(class="fourth")  is
+
+
+    div
+      p(class="fifth" style="font-size:80px") Andrea Dumalagan
+      h1(class="sixth" style="font-size:32px") Computer Engineering
+        span(class="seventh")  Undergrad
+        span(class="eigth")  @
+        span(class="ninth")  Rutgers University

@@ -1,0 +1,105 @@
+doctype html
+style.
+
+  @import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap');
+
+  html {
+    margin: 0;
+    height: 100%;
+    font-family: Montserrat;
+    font-size: 14px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, #ff4d00, #ff4424, #ff3d39, #ff384a, #ff375a);
+  }
+  ul { 
+    margin: 50px auto 0; 
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    width: 600px;
+    text-align: center;
+  }
+  li { 
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+  }
+  a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  @media screen and (max-height: 300px) {
+    ul {
+      margin-top: 40px;
+    }
+  }
+  div{
+    color: white;
+    font-size: 20px;
+  }
+  #wrap{
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    min-width: 600px;
+  }
+  img{
+    margin-top: 13%;
+    border-radius: 50%;
+    max-width: 70%;
+    -webkit-filter: drop-shadow( 0px 5px 4px rgba(0, 0, 0, .4));
+    filter: drop-shadow( 0px 5px 4px rgba(0, 0, 0, .4));
+  }
+  #profile-img{
+    margin-top: 7%;
+    width: 30%;
+    float: left;
+  }
+  #paragraph{
+    margin-top: 7%;
+    overflow: hidden;
+  }
+html
+  ul
+    li 
+      a(href="/") Home
+    li
+      a(href="/about") About
+    li 
+      a(href="/projects") Projects
+    li 
+      a(href="/contact") Contact
+  div(id="wrap")
+    div(id="title")
+      body ABOUT ME
+    div(id="profile-img")
+      img(src="http://localhost:3000/images/githubprofile.jpg")
+    div(id="paragraph")
+      br
+      br
+      p I am currently finishing out my last year of undergrad, studying Electrical and Computer Engineering. While my previous experiences have cultivated my affinity for web development, my academic background has made me proficient in eletrical and computer engineering fundamentals.
+      p The world is always changing, so the projects I choose to undertake act as a learning tool: learning about a new problem to solve, a new technology, or a new way of doing what we always have been—I believe there is always room for improvement and opportunities to grow.
+  
